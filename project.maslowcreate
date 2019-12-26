@@ -6,9 +6,36 @@
             "x": 0,
             "y": 0,
             "uniqueID": 860423,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Geometry",
+                    "ioValue": 10
+                }
+            ],
             "topLevel": true,
             "allAtoms": [
+                {
+                    "atomType": "Input",
+                    "name": "Geometry",
+                    "x": 30,
+                    "y": 208,
+                    "uniqueID": 442139,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Code",
+                    "name": "Code",
+                    "x": 643,
+                    "y": 135,
+                    "uniqueID": 657903,
+                    "ioValues": [
+                        {
+                            "name": "Input1",
+                            "ioValue": 10
+                        }
+                    ],
+                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1){\n  console.log(JSON.stringify(Input1));\n  return Sphere(40)        //return must be geometry;\n}\n\nreturn main(Input1)"
+                },
                 {
                     "atomType": "Output",
                     "name": "Output",
@@ -17,7 +44,21 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Input1",
+                    "ap2Primary": false,
+                    "ap1ID": 442139,
+                    "ap2ID": 657903
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 657903
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
