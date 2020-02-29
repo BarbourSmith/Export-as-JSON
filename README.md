@@ -4,6 +4,3 @@
 
 ![](/project.svg)
 
-## Export as JSON
-
-
