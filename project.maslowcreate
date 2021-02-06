@@ -1,66 +1,70 @@
 {
-    "molecules": [
+    "atomType": "Molecule",
+    "name": "Export as JSON",
+    "x": 0,
+    "y": 0,
+    "uniqueID": 860423,
+    "ioValues": [
         {
-            "atomType": "Molecule",
-            "name": "Export as JSON",
-            "x": 0,
-            "y": 0,
-            "uniqueID": 860423,
+            "name": "Geometry",
+            "ioValue": 10
+        }
+    ],
+    "topLevel": true,
+    "allAtoms": [
+        {
+            "atomType": "Input",
+            "name": "Geometry",
+            "x": 0.013333333333333334,
+            "y": 0.48659003831417624,
+            "uniqueID": 442139,
+            "ioValues": []
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.4282576866764275,
+            "y": 0.5402298850574713,
+            "uniqueID": 657903,
             "ioValues": [
                 {
-                    "name": "Geometry",
+                    "name": "Input1",
                     "ioValue": 10
                 }
             ],
-            "topLevel": true,
-            "allAtoms": [
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1){\n  console.log(JSON.stringify(Input1.toGeometry()));\n  return Sphere(40)        //return must be geometry;\n}\n\nreturn main(Input1)"
+        },
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.9853587115666179,
+            "y": 0.5,
+            "uniqueID": 171578,
+            "ioValues": [
                 {
-                    "atomType": "Input",
-                    "name": "Geometry",
-                    "x": 0.024158125915080528,
-                    "y": 0.48659003831417624,
-                    "uniqueID": 442139,
-                    "ioValues": []
-                },
-                {
-                    "atomType": "Code",
-                    "name": "Code",
-                    "x": 0.4282576866764275,
-                    "y": 0.5402298850574713,
-                    "uniqueID": 657903,
-                    "ioValues": [
-                        {
-                            "name": "Input1",
-                            "ioValue": 10
-                        }
-                    ],
-                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1){\n  console.log(JSON.stringify(Input1));\n  return Sphere(40)        //return must be geometry;\n}\n\nreturn main(Input1)"
-                },
-                {
-                    "atomType": "Output",
-                    "name": "Output",
-                    "x": 0.9853587115666179,
-                    "y": 0.5,
-                    "ioValues": []
+                    "name": "number or geometry",
+                    "ioValue": "atoms/860423/657903Code"
                 }
-            ],
-            "allConnectors": [
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "Input1",
-                    "ap2Primary": false,
-                    "ap1ID": 442139,
-                    "ap2ID": 657903
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 657903
-                }
-            ],
-            "fileTypeVersion": 1
+            ]
         }
     ],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Input1",
+            "ap2Primary": false,
+            "ap1ID": 442139,
+            "ap2ID": 657903
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 657903,
+            "ap2ID": 171578
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
     "circleSegmentSize": "0.1"
 }
