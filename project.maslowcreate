@@ -32,7 +32,7 @@
                     "ioValue": 10
                 }
             ],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1){\n  console.log(JSON.stringify(Input1.toGeometry()));\n  return Sphere(40)        //return must be geometry;\n}\n\nreturn main(Input1)"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1){\n  console.log(JSON.stringify(Input1.toGeometry()));\n  return Circle(40)        //return must be geometry;\n}\n\nreturn main(Input1)"
         },
         {
             "atomType": "Output",
