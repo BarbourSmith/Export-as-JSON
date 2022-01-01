@@ -23,16 +23,16 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.3481781376518218,
-            "y": 0.37022900763358774,
-            "uniqueID": 657903,
+            "x": 0.30562770562770564,
+            "y": 0.5086505190311419,
+            "uniqueID": 987815,
             "ioValues": [
                 {
                     "name": "Input1",
                     "ioValue": 10
                 }
             ],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1){\n  console.log(JSON.stringify(Input1.toGeometry()));\n  return Circle(40)        //return must be geometry;\n}\n\nreturn main(Input1)"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n//Inputs:[Input1];\n\nconsole.log(JSON.stringify(Input1.toGeometry()));\nreturn Arc(40)        //return must be geometry;"
         },
         {
             "atomType": "Circle",
@@ -81,7 +81,7 @@
             "ap2Name": "Input1",
             "ap2Primary": false,
             "ap1ID": 442139,
-            "ap2ID": 657903
+            "ap2ID": 987815
         },
         {
             "ap1Name": "geometry",
@@ -99,6 +99,8 @@
         }
     ],
     "fileTypeVersion": 1,
+    "simplify": false,
+    "unitsIndex": 0,
     "filetypeVersion": 1,
     "circleSegmentSize": "0.1"
 }
